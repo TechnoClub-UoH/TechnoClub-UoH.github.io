@@ -1,8 +1,19 @@
-<div class="slideshow">
-  <a href="link1.html"><img src="image1.jpg"></a>
-  <a href="link2.html"><img src="image2.jpg"></a>
-  <a href="link3.html"><img src="image3.jpg"></a>
-</div>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
 
-<button id="prev">Prev</button>
-<button id="next">Next</button>
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slideshow");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+  }
+</script>
