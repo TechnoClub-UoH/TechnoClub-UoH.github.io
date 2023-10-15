@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
-    <link rel="stylesheet" href="updates.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="updates.css">
+  <script src="script.js" defer></script>
+  <title>Document</title>
 </head>
 <body>
-    <div class="slider">
-        <div class="images">
-            <input type="radio" name="slide" id="11_Oct_2023" checked>
-            <input type="radio" name="slide" id="11_Oct_2023_2">
-
-            <img src="11_Oct_2023.JPG" class="m1" alt="11_Oct_2023">
-            <img src="11_Oct_2023_2.JPG" class="m2" alt="11_Oct_2023_2">
-        </div>
-        <div class="dots">
-            <label for="11_Oct_2023"></label>
-            <label for="11_Oct_2023_2"></label>
-        </div>
+  <section aria-label="Newest Photos">
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img src="11_Oct_2023.JPG" alt="Nature Image #1">
+        </li>
+        <li class="slide">
+          <img src="11_Oct_2023_2.JPG" alt="Nature Image #2">
+        </li>
+      </ul>
     </div>
+  </section>
 </body>
 </html>
