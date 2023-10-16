@@ -12,25 +12,6 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
-  <script>
-    function parseUA() {
-  var u = navigator.userAgent;
-  var u2 = navigator.userAgent.toLowerCase();
-  return {
-    mobile: !!u.match(/AppleWebKit.*Mobile.*/),
-    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
-    iPhone: u.indexOf('iPhone') > -1,
-    iPad: u.indexOf('iPad') > -1,
-  };
-}
-
-var ua = parseUA();
-
-if (ua.mobile) {
-  location.href = './pc.html';
-}
-
-  </script>
 </head>
 
 <body>
