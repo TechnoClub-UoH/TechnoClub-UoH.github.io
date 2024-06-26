@@ -8,9 +8,12 @@
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/slider.css" rel="stylesheet"/>
+  <link href="css/social.css" rel="stylesheet"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
 </head>
@@ -36,7 +39,7 @@
   <div class="menu-container"></div>
   <div class="content-container">
     <!-------------------------------------------------------------------------------------------->
-    <div class="banner" style="background: url('https://media.discordapp.net/attachments/1157709281815187546/1211314902468264028/Blue_Yellow_Futuristic_Virtual_Technology_Blog_Banner.png?ex=65edbfe9&is=65db4ae9&hm=c7bcc3d3785bb0aa0b7a0a1e06a722c75880fed6731e8f2da3b4c432f2e1c5b2&=&format=webp&quality=lossless&width=1100&height=550') no-repeat center; background-size: cover; height: 400px;">
+    <div class="banner" style="background: url('img/banner.png') no-repeat center; background-size: cover; height: 400px;">
       <div class="banner-table flex-column">
       </div>
     </div>
@@ -53,6 +56,11 @@
       </div>
     </div>
     <!-------------------------------------------------------------------------------------------->
+    <div class="row social" align="center">
+      <a target = "blank" href='https://www.instagram.com/technoclub_uoh'><i class='fab fa-instagram'></i></a>
+      <a target="blank" href=""><i class="fab fa-linkedin"></i></a>
+    </div>
+    <!-------------------------------------------------------------------------------------------->
     <div class="content">
       <div class="content-table flex-column">
         <!-------------------------------------------------------------------------------------------->
@@ -61,11 +69,21 @@
         <div class="flex-row">
           <div class="flex-item flex-column full-width">
             <h2>Highlights</h2>
-              <h3>WORK IN PROGESS</h3>
-            <!--<hr>
-            #<p>
-            #  <iframe id="section" src="Updates/slides.html" height="600" width="1800"></iframe> 
-            #</p>-->
+            <section>
+            <div class="slider-wrapper">
+              <div class="slider">
+                <img id="slide-1" src="https://images.unsplash.com/photo-1656464868371-602be27fd4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary orange planet in space" />
+                <img id="slide-2" src="https://images.unsplash.com/photo-1657586640569-4a3d4577328c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary green planet in space" />
+                <img id="slide-3" src="https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary blue planet in space" />
+              </div>
+              <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+              </div>
+            </div>
+            </section>
+            
           </div>
         </div>
 
@@ -234,16 +252,8 @@
       <div class="banner-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>Contact Us</h2>
-            <p class="text no-bottom-margin">
-              Feel free to contact via the details provided below.
-            </p>
-            <p class="text no-bottom-margin">
-              TechnoClub - UOH, CASEST, School of Physics Annexe
-            </p>
-            <p class="text add-bottom-margin-large">
-              Email: technoclub_casest@uohyd.ac.in
-            
+            <p class="text">
+              Reach out to us at technoclub_casest@uohyd.ac.in
             </p>
           </div>
         </div>
